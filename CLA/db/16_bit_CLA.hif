@@ -1,0 +1,152 @@
+Version 8.0 Build 215 05/29/2008 SJ Full Version
+38
+2494
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+lookahead_circuitry_4bit
+# storage
+db|16_bit_CLA.(2).cnf
+db|16_bit_CLA.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lookahead_circuitry_4bit.vhd
+99cc34c1bc11918a2afe8403d10f491
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+4_bit_CLA:inst|lookahead_circuitry_4bit:inst7
+4_bit_CLA:inst13|lookahead_circuitry_4bit:inst7
+4_bit_CLA:inst14|lookahead_circuitry_4bit:inst7
+4_bit_CLA:inst15|lookahead_circuitry_4bit:inst7
+}
+# lmf
+c:|appj|altera|80|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+inputs_block
+# storage
+db|16_bit_CLA.(1).cnf
+db|16_bit_CLA.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+inputs_block.vhd
+f0ab762e38272945df257cf9f7c42b
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+4_bit_CLA:inst|inputs_block:inst1
+4_bit_CLA:inst|inputs_block:inst2
+4_bit_CLA:inst|inputs_block:inst3
+4_bit_CLA:inst|inputs_block:inst4
+4_bit_CLA:inst13|inputs_block:inst1
+4_bit_CLA:inst13|inputs_block:inst2
+4_bit_CLA:inst13|inputs_block:inst3
+4_bit_CLA:inst13|inputs_block:inst4
+4_bit_CLA:inst14|inputs_block:inst1
+4_bit_CLA:inst14|inputs_block:inst2
+4_bit_CLA:inst14|inputs_block:inst3
+4_bit_CLA:inst14|inputs_block:inst4
+4_bit_CLA:inst15|inputs_block:inst1
+4_bit_CLA:inst15|inputs_block:inst2
+4_bit_CLA:inst15|inputs_block:inst3
+4_bit_CLA:inst15|inputs_block:inst4
+}
+# lmf
+c:|appj|altera|80|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+4_bit_CLA
+# storage
+db|16_bit_CLA.(3).cnf
+db|16_bit_CLA.(3).cnf
+# case_insensitive
+# source_file
+4_bit_CLA.bdf
+4ebf06223b231f85b52e66c22be86
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4_bit_CLA:inst
+4_bit_CLA:inst13
+4_bit_CLA:inst14
+4_bit_CLA:inst15
+}
+# macro_sequence
+
+# end
+# entity
+16_bit_CLA
+# storage
+db|16_bit_CLA.(0).cnf
+db|16_bit_CLA.(0).cnf
+# case_insensitive
+# source_file
+16_bit_CLA.bdf
+9e998962d3feb6b668884d7da6f7fc
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

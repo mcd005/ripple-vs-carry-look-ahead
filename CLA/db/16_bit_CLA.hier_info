@@ -1,0 +1,469 @@
+|16_bit_CLA
+S[0] <= 4_bit_CLA:inst.S0
+S[1] <= 4_bit_CLA:inst.S1
+S[2] <= 4_bit_CLA:inst.S2
+S[3] <= 4_bit_CLA:inst.S3
+S[4] <= 4_bit_CLA:inst13.S0
+S[5] <= 4_bit_CLA:inst13.S1
+S[6] <= 4_bit_CLA:inst13.S2
+S[7] <= 4_bit_CLA:inst13.S3
+S[8] <= 4_bit_CLA:inst14.S0
+S[9] <= 4_bit_CLA:inst14.S1
+S[10] <= 4_bit_CLA:inst14.S2
+S[11] <= 4_bit_CLA:inst14.S3
+S[12] <= 4_bit_CLA:inst15.S0
+S[13] <= 4_bit_CLA:inst15.S1
+S[14] <= 4_bit_CLA:inst15.S2
+S[15] <= 4_bit_CLA:inst15.S3
+S[16] <= 4_bit_CLA:inst15.Cout
+Cin => 4_bit_CLA:inst.Cin
+A[0] => 4_bit_CLA:inst.A0
+A[1] => 4_bit_CLA:inst.A1
+A[2] => 4_bit_CLA:inst.A2
+A[3] => 4_bit_CLA:inst.A3
+A[4] => 4_bit_CLA:inst13.A0
+A[5] => 4_bit_CLA:inst13.A1
+A[6] => 4_bit_CLA:inst13.A2
+A[7] => 4_bit_CLA:inst13.A3
+A[8] => 4_bit_CLA:inst14.A0
+A[9] => 4_bit_CLA:inst14.A1
+A[10] => 4_bit_CLA:inst14.A2
+A[11] => 4_bit_CLA:inst14.A3
+A[12] => 4_bit_CLA:inst15.A0
+A[13] => 4_bit_CLA:inst15.A1
+A[14] => 4_bit_CLA:inst15.A2
+A[15] => 4_bit_CLA:inst15.A3
+B[0] => 4_bit_CLA:inst.B0
+B[1] => 4_bit_CLA:inst.B1
+B[2] => 4_bit_CLA:inst.B2
+B[3] => 4_bit_CLA:inst.B3
+B[4] => 4_bit_CLA:inst13.B0
+B[5] => 4_bit_CLA:inst13.B1
+B[6] => 4_bit_CLA:inst13.B2
+B[7] => 4_bit_CLA:inst13.B3
+B[8] => 4_bit_CLA:inst14.B0
+B[9] => 4_bit_CLA:inst14.B1
+B[10] => 4_bit_CLA:inst14.B2
+B[11] => 4_bit_CLA:inst14.B3
+B[12] => 4_bit_CLA:inst15.B0
+B[13] => 4_bit_CLA:inst15.B1
+B[14] => 4_bit_CLA:inst15.B2
+B[15] => 4_bit_CLA:inst15.B3
+
+
+|16_bit_CLA|4_bit_CLA:inst
+S0 <= inputs_block:inst1.S
+A0 => inputs_block:inst1.A
+B0 => inputs_block:inst1.B
+Cin => inputs_block:inst1.C
+Cin => lookahead_circuitry_4bit:inst7.Cin
+S1 <= inputs_block:inst2.S
+A1 => inputs_block:inst2.A
+B1 => inputs_block:inst2.B
+A2 => inputs_block:inst3.A
+B2 => inputs_block:inst3.B
+A3 => inputs_block:inst4.A
+B3 => inputs_block:inst4.B
+S2 <= inputs_block:inst3.S
+S3 <= inputs_block:inst4.S
+Cout <= lookahead_circuitry_4bit:inst7.Cout
+
+
+|16_bit_CLA|4_bit_CLA:inst|inputs_block:inst1
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst|inputs_block:inst2
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst|lookahead_circuitry_4bit:inst7
+P0 => Cout~8.IN1
+P0 => C3~5.IN0
+P0 => C2~2.IN1
+P0 => C1~0.IN0
+G0 => Cout~6.IN1
+G0 => C3~3.IN0
+G0 => C2~0.IN1
+G0 => C1~1.IN0
+P1 => Cout~5.IN1
+P1 => C3~2.IN1
+P1 => C2~2.IN0
+P1 => C2~0.IN0
+G1 => Cout~3.IN1
+G1 => C3~0.IN1
+G1 => C2~1.IN0
+P2 => Cout~2.IN1
+P2 => C3~2.IN0
+P2 => C3~0.IN0
+G2 => Cout~0.IN0
+G2 => C3~1.IN0
+P3 => Cout~2.IN0
+P3 => Cout~0.IN1
+G3 => Cout~1.IN1
+Cin => Cout~9.IN1
+Cin => C3~6.IN0
+Cin => C2~3.IN0
+Cin => C1~0.IN1
+Cout <= Cout~10.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= C1~1.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C2~4.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= C3~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst|inputs_block:inst3
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst|inputs_block:inst4
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst13
+S0 <= inputs_block:inst1.S
+A0 => inputs_block:inst1.A
+B0 => inputs_block:inst1.B
+Cin => inputs_block:inst1.C
+Cin => lookahead_circuitry_4bit:inst7.Cin
+S1 <= inputs_block:inst2.S
+A1 => inputs_block:inst2.A
+B1 => inputs_block:inst2.B
+A2 => inputs_block:inst3.A
+B2 => inputs_block:inst3.B
+A3 => inputs_block:inst4.A
+B3 => inputs_block:inst4.B
+S2 <= inputs_block:inst3.S
+S3 <= inputs_block:inst4.S
+Cout <= lookahead_circuitry_4bit:inst7.Cout
+
+
+|16_bit_CLA|4_bit_CLA:inst13|inputs_block:inst1
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst13|inputs_block:inst2
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst13|lookahead_circuitry_4bit:inst7
+P0 => Cout~8.IN1
+P0 => C3~5.IN0
+P0 => C2~2.IN1
+P0 => C1~0.IN0
+G0 => Cout~6.IN1
+G0 => C3~3.IN0
+G0 => C2~0.IN1
+G0 => C1~1.IN0
+P1 => Cout~5.IN1
+P1 => C3~2.IN1
+P1 => C2~2.IN0
+P1 => C2~0.IN0
+G1 => Cout~3.IN1
+G1 => C3~0.IN1
+G1 => C2~1.IN0
+P2 => Cout~2.IN1
+P2 => C3~2.IN0
+P2 => C3~0.IN0
+G2 => Cout~0.IN0
+G2 => C3~1.IN0
+P3 => Cout~2.IN0
+P3 => Cout~0.IN1
+G3 => Cout~1.IN1
+Cin => Cout~9.IN1
+Cin => C3~6.IN0
+Cin => C2~3.IN0
+Cin => C1~0.IN1
+Cout <= Cout~10.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= C1~1.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C2~4.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= C3~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst13|inputs_block:inst3
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst13|inputs_block:inst4
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst14
+S0 <= inputs_block:inst1.S
+A0 => inputs_block:inst1.A
+B0 => inputs_block:inst1.B
+Cin => inputs_block:inst1.C
+Cin => lookahead_circuitry_4bit:inst7.Cin
+S1 <= inputs_block:inst2.S
+A1 => inputs_block:inst2.A
+B1 => inputs_block:inst2.B
+A2 => inputs_block:inst3.A
+B2 => inputs_block:inst3.B
+A3 => inputs_block:inst4.A
+B3 => inputs_block:inst4.B
+S2 <= inputs_block:inst3.S
+S3 <= inputs_block:inst4.S
+Cout <= lookahead_circuitry_4bit:inst7.Cout
+
+
+|16_bit_CLA|4_bit_CLA:inst14|inputs_block:inst1
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst14|inputs_block:inst2
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst14|lookahead_circuitry_4bit:inst7
+P0 => Cout~8.IN1
+P0 => C3~5.IN0
+P0 => C2~2.IN1
+P0 => C1~0.IN0
+G0 => Cout~6.IN1
+G0 => C3~3.IN0
+G0 => C2~0.IN1
+G0 => C1~1.IN0
+P1 => Cout~5.IN1
+P1 => C3~2.IN1
+P1 => C2~2.IN0
+P1 => C2~0.IN0
+G1 => Cout~3.IN1
+G1 => C3~0.IN1
+G1 => C2~1.IN0
+P2 => Cout~2.IN1
+P2 => C3~2.IN0
+P2 => C3~0.IN0
+G2 => Cout~0.IN0
+G2 => C3~1.IN0
+P3 => Cout~2.IN0
+P3 => Cout~0.IN1
+G3 => Cout~1.IN1
+Cin => Cout~9.IN1
+Cin => C3~6.IN0
+Cin => C2~3.IN0
+Cin => C1~0.IN1
+Cout <= Cout~10.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= C1~1.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C2~4.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= C3~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst14|inputs_block:inst3
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst14|inputs_block:inst4
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst15
+S0 <= inputs_block:inst1.S
+A0 => inputs_block:inst1.A
+B0 => inputs_block:inst1.B
+Cin => inputs_block:inst1.C
+Cin => lookahead_circuitry_4bit:inst7.Cin
+S1 <= inputs_block:inst2.S
+A1 => inputs_block:inst2.A
+B1 => inputs_block:inst2.B
+A2 => inputs_block:inst3.A
+B2 => inputs_block:inst3.B
+A3 => inputs_block:inst4.A
+B3 => inputs_block:inst4.B
+S2 <= inputs_block:inst3.S
+S3 <= inputs_block:inst4.S
+Cout <= lookahead_circuitry_4bit:inst7.Cout
+
+
+|16_bit_CLA|4_bit_CLA:inst15|inputs_block:inst1
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst15|inputs_block:inst2
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst15|lookahead_circuitry_4bit:inst7
+P0 => Cout~8.IN1
+P0 => C3~5.IN0
+P0 => C2~2.IN1
+P0 => C1~0.IN0
+G0 => Cout~6.IN1
+G0 => C3~3.IN0
+G0 => C2~0.IN1
+G0 => C1~1.IN0
+P1 => Cout~5.IN1
+P1 => C3~2.IN1
+P1 => C2~2.IN0
+P1 => C2~0.IN0
+G1 => Cout~3.IN1
+G1 => C3~0.IN1
+G1 => C2~1.IN0
+P2 => Cout~2.IN1
+P2 => C3~2.IN0
+P2 => C3~0.IN0
+G2 => Cout~0.IN0
+G2 => C3~1.IN0
+P3 => Cout~2.IN0
+P3 => Cout~0.IN1
+G3 => Cout~1.IN1
+Cin => Cout~9.IN1
+Cin => C3~6.IN0
+Cin => C2~3.IN0
+Cin => C1~0.IN1
+Cout <= Cout~10.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= C1~1.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= C2~4.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= C3~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst15|inputs_block:inst3
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|16_bit_CLA|4_bit_CLA:inst15|inputs_block:inst4
+A => S~0.IN0
+A => P~0.IN0
+A => G~0.IN0
+B => S~0.IN1
+B => P~0.IN1
+B => G~0.IN1
+C => S~1.IN1
+G <= G~0.DB_MAX_OUTPUT_PORT_TYPE
+P <= P~0.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
