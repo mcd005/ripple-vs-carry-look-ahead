@@ -1,0 +1,277 @@
+|behavioural_logic
+S[0] <= full_adder:inst.S
+S[1] <= full_adder:inst61.S
+S[2] <= full_adder:inst62.S
+S[3] <= full_adder:inst63.S
+S[4] <= full_adder:inst64.S
+S[5] <= full_adder:inst65.S
+S[6] <= full_adder:inst66.S
+S[7] <= full_adder:inst67.S
+S[8] <= full_adder:inst68.S
+S[9] <= full_adder:inst69.S
+S[10] <= full_adder:inst70.S
+S[11] <= full_adder:inst71.S
+S[12] <= full_adder:inst72.S
+S[13] <= full_adder:inst73.S
+S[14] <= full_adder:inst74.S
+S[15] <= full_adder:inst75.S
+S[16] <= full_adder:inst75.Cout
+A[0] => full_adder:inst.A
+A[1] => full_adder:inst61.A
+A[2] => full_adder:inst62.A
+A[3] => full_adder:inst63.A
+A[4] => full_adder:inst64.A
+A[5] => full_adder:inst65.A
+A[6] => full_adder:inst66.A
+A[7] => full_adder:inst67.A
+A[8] => full_adder:inst68.A
+A[9] => full_adder:inst69.A
+A[10] => full_adder:inst70.A
+A[11] => full_adder:inst71.A
+A[12] => full_adder:inst72.A
+A[13] => full_adder:inst73.A
+A[14] => full_adder:inst74.A
+A[15] => full_adder:inst75.A
+B[0] => full_adder:inst.B
+B[1] => full_adder:inst61.B
+B[2] => full_adder:inst62.B
+B[3] => full_adder:inst63.B
+B[4] => full_adder:inst64.B
+B[5] => full_adder:inst65.B
+B[6] => full_adder:inst66.B
+B[7] => full_adder:inst67.B
+B[8] => full_adder:inst68.B
+B[9] => full_adder:inst69.B
+B[10] => full_adder:inst70.B
+B[11] => full_adder:inst71.B
+B[12] => full_adder:inst72.B
+B[13] => full_adder:inst73.B
+B[14] => full_adder:inst74.B
+B[15] => full_adder:inst75.B
+Cin => full_adder:inst.Cin
+
+
+|behavioural_logic|full_adder:inst
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst61
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst62
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst63
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst64
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst65
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst66
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst67
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst68
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst69
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst70
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst71
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst72
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst73
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst74
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|behavioural_logic|full_adder:inst75
+A => S~1.IN1
+A => Cout~3.IN1
+A => Cout~1.IN1
+B => S~0.IN0
+B => Cout~3.IN0
+B => Cout~0.IN0
+Cin => S~0.IN1
+Cin => Cout~1.IN0
+Cin => Cout~0.IN1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+

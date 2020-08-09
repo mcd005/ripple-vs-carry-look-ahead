@@ -1,0 +1,93 @@
+Version 8.0 Build 215 05/29/2008 SJ Full Version
+38
+2494
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+full_adder
+# storage
+db|behavioural_logic.(1).cnf
+db|behavioural_logic.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+full_adder.vhd
+8ae12a1a14c76117dd85d7a3e7c090
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+full_adder:inst
+full_adder:inst61
+full_adder:inst62
+full_adder:inst63
+full_adder:inst64
+full_adder:inst65
+full_adder:inst66
+full_adder:inst67
+full_adder:inst68
+full_adder:inst69
+full_adder:inst70
+full_adder:inst71
+full_adder:inst72
+full_adder:inst73
+full_adder:inst74
+full_adder:inst75
+}
+# lmf
+c:|appj|altera|80|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+behavioural_logic
+# storage
+db|behavioural_logic.(0).cnf
+db|behavioural_logic.(0).cnf
+# case_insensitive
+# source_file
+behavioural_logic.bdf
+1a21e45cad66fa6a2ca55aa8531bc148
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

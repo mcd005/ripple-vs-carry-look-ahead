@@ -1,0 +1,324 @@
+Simulator report for behavioural_logic
+Fri Apr 26 15:09:20 2019
+Quartus II Version 8.0 Build 215 05/29/2008 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 50.0 ns      ;
+; Simulation Netlist Size     ; 82 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 3            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
+; Device                      ; EP1C20F400C7 ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; End time                                                                                   ; 50 ns          ;               ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; 16_bit_RCA.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 82           ;
+; Total output ports checked                          ; 82           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 79           ;
+; Total output ports with no 1-value coverage         ; 79           ;
+; Total output ports with no 0-value coverage         ; 82           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |behavioural_logic|full_adder:inst|Cout~76    ; |behavioural_logic|full_adder:inst|Cout~76    ; combout          ;
+; |behavioural_logic|full_adder:inst61|Cout~140 ; |behavioural_logic|full_adder:inst61|Cout~140 ; combout          ;
+; |behavioural_logic|full_adder:inst62|Cout~194 ; |behavioural_logic|full_adder:inst62|Cout~194 ; combout          ;
+; |behavioural_logic|full_adder:inst63|Cout~76  ; |behavioural_logic|full_adder:inst63|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst64|Cout~76  ; |behavioural_logic|full_adder:inst64|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst65|Cout~76  ; |behavioural_logic|full_adder:inst65|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst66|Cout~76  ; |behavioural_logic|full_adder:inst66|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst67|Cout~76  ; |behavioural_logic|full_adder:inst67|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst68|Cout~76  ; |behavioural_logic|full_adder:inst68|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst69|Cout~76  ; |behavioural_logic|full_adder:inst69|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst70|Cout~76  ; |behavioural_logic|full_adder:inst70|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst71|Cout~76  ; |behavioural_logic|full_adder:inst71|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst72|Cout~76  ; |behavioural_logic|full_adder:inst72|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst73|Cout~76  ; |behavioural_logic|full_adder:inst73|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst74|Cout~76  ; |behavioural_logic|full_adder:inst74|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst75|Cout~72  ; |behavioural_logic|full_adder:inst75|Cout~72  ; combout          ;
+; |behavioural_logic|full_adder:inst75|S        ; |behavioural_logic|full_adder:inst75|S        ; combout          ;
+; |behavioural_logic|full_adder:inst74|S        ; |behavioural_logic|full_adder:inst74|S        ; combout          ;
+; |behavioural_logic|full_adder:inst73|S        ; |behavioural_logic|full_adder:inst73|S        ; combout          ;
+; |behavioural_logic|full_adder:inst72|S        ; |behavioural_logic|full_adder:inst72|S        ; combout          ;
+; |behavioural_logic|full_adder:inst71|S        ; |behavioural_logic|full_adder:inst71|S        ; combout          ;
+; |behavioural_logic|full_adder:inst70|S        ; |behavioural_logic|full_adder:inst70|S        ; combout          ;
+; |behavioural_logic|full_adder:inst69|S        ; |behavioural_logic|full_adder:inst69|S        ; combout          ;
+; |behavioural_logic|full_adder:inst68|S        ; |behavioural_logic|full_adder:inst68|S        ; combout          ;
+; |behavioural_logic|full_adder:inst67|S        ; |behavioural_logic|full_adder:inst67|S        ; combout          ;
+; |behavioural_logic|full_adder:inst66|S        ; |behavioural_logic|full_adder:inst66|S        ; combout          ;
+; |behavioural_logic|full_adder:inst65|S        ; |behavioural_logic|full_adder:inst65|S        ; combout          ;
+; |behavioural_logic|full_adder:inst64|S        ; |behavioural_logic|full_adder:inst64|S        ; combout          ;
+; |behavioural_logic|full_adder:inst63|S        ; |behavioural_logic|full_adder:inst63|S        ; combout          ;
+; |behavioural_logic|full_adder:inst62|S        ; |behavioural_logic|full_adder:inst62|S        ; combout          ;
+; |behavioural_logic|full_adder:inst61|S        ; |behavioural_logic|full_adder:inst61|S        ; combout          ;
+; |behavioural_logic|S[16]                      ; |behavioural_logic|S[16]                      ; padio            ;
+; |behavioural_logic|S[15]                      ; |behavioural_logic|S[15]                      ; padio            ;
+; |behavioural_logic|S[14]                      ; |behavioural_logic|S[14]                      ; padio            ;
+; |behavioural_logic|S[13]                      ; |behavioural_logic|S[13]                      ; padio            ;
+; |behavioural_logic|S[12]                      ; |behavioural_logic|S[12]                      ; padio            ;
+; |behavioural_logic|S[11]                      ; |behavioural_logic|S[11]                      ; padio            ;
+; |behavioural_logic|S[10]                      ; |behavioural_logic|S[10]                      ; padio            ;
+; |behavioural_logic|S[9]                       ; |behavioural_logic|S[9]                       ; padio            ;
+; |behavioural_logic|S[8]                       ; |behavioural_logic|S[8]                       ; padio            ;
+; |behavioural_logic|S[7]                       ; |behavioural_logic|S[7]                       ; padio            ;
+; |behavioural_logic|S[6]                       ; |behavioural_logic|S[6]                       ; padio            ;
+; |behavioural_logic|S[5]                       ; |behavioural_logic|S[5]                       ; padio            ;
+; |behavioural_logic|S[4]                       ; |behavioural_logic|S[4]                       ; padio            ;
+; |behavioural_logic|S[3]                       ; |behavioural_logic|S[3]                       ; padio            ;
+; |behavioural_logic|S[2]                       ; |behavioural_logic|S[2]                       ; padio            ;
+; |behavioural_logic|S[1]                       ; |behavioural_logic|S[1]                       ; padio            ;
+; |behavioural_logic|B[15]                      ; |behavioural_logic|B[15]~corein               ; combout          ;
+; |behavioural_logic|A[15]                      ; |behavioural_logic|A[15]~corein               ; combout          ;
+; |behavioural_logic|B[14]                      ; |behavioural_logic|B[14]~corein               ; combout          ;
+; |behavioural_logic|A[14]                      ; |behavioural_logic|A[14]~corein               ; combout          ;
+; |behavioural_logic|B[13]                      ; |behavioural_logic|B[13]~corein               ; combout          ;
+; |behavioural_logic|A[13]                      ; |behavioural_logic|A[13]~corein               ; combout          ;
+; |behavioural_logic|B[12]                      ; |behavioural_logic|B[12]~corein               ; combout          ;
+; |behavioural_logic|A[12]                      ; |behavioural_logic|A[12]~corein               ; combout          ;
+; |behavioural_logic|B[11]                      ; |behavioural_logic|B[11]~corein               ; combout          ;
+; |behavioural_logic|A[11]                      ; |behavioural_logic|A[11]~corein               ; combout          ;
+; |behavioural_logic|B[10]                      ; |behavioural_logic|B[10]~corein               ; combout          ;
+; |behavioural_logic|A[10]                      ; |behavioural_logic|A[10]~corein               ; combout          ;
+; |behavioural_logic|B[9]                       ; |behavioural_logic|B[9]~corein                ; combout          ;
+; |behavioural_logic|A[9]                       ; |behavioural_logic|A[9]~corein                ; combout          ;
+; |behavioural_logic|B[8]                       ; |behavioural_logic|B[8]~corein                ; combout          ;
+; |behavioural_logic|A[8]                       ; |behavioural_logic|A[8]~corein                ; combout          ;
+; |behavioural_logic|B[7]                       ; |behavioural_logic|B[7]~corein                ; combout          ;
+; |behavioural_logic|A[7]                       ; |behavioural_logic|A[7]~corein                ; combout          ;
+; |behavioural_logic|B[6]                       ; |behavioural_logic|B[6]~corein                ; combout          ;
+; |behavioural_logic|A[6]                       ; |behavioural_logic|A[6]~corein                ; combout          ;
+; |behavioural_logic|B[5]                       ; |behavioural_logic|B[5]~corein                ; combout          ;
+; |behavioural_logic|A[5]                       ; |behavioural_logic|A[5]~corein                ; combout          ;
+; |behavioural_logic|B[4]                       ; |behavioural_logic|B[4]~corein                ; combout          ;
+; |behavioural_logic|A[4]                       ; |behavioural_logic|A[4]~corein                ; combout          ;
+; |behavioural_logic|B[3]                       ; |behavioural_logic|B[3]~corein                ; combout          ;
+; |behavioural_logic|A[3]                       ; |behavioural_logic|A[3]~corein                ; combout          ;
+; |behavioural_logic|B[2]                       ; |behavioural_logic|B[2]~corein                ; combout          ;
+; |behavioural_logic|A[2]                       ; |behavioural_logic|A[2]~corein                ; combout          ;
+; |behavioural_logic|B[1]                       ; |behavioural_logic|B[1]~corein                ; combout          ;
+; |behavioural_logic|A[1]                       ; |behavioural_logic|A[1]~corein                ; combout          ;
+; |behavioural_logic|Cin                        ; |behavioural_logic|Cin~corein                 ; combout          ;
+; |behavioural_logic|A[0]                       ; |behavioural_logic|A[0]~corein                ; combout          ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |behavioural_logic|full_adder:inst|Cout~76    ; |behavioural_logic|full_adder:inst|Cout~76    ; combout          ;
+; |behavioural_logic|full_adder:inst61|Cout~140 ; |behavioural_logic|full_adder:inst61|Cout~140 ; combout          ;
+; |behavioural_logic|full_adder:inst62|Cout~194 ; |behavioural_logic|full_adder:inst62|Cout~194 ; combout          ;
+; |behavioural_logic|full_adder:inst63|Cout~76  ; |behavioural_logic|full_adder:inst63|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst64|Cout~76  ; |behavioural_logic|full_adder:inst64|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst65|Cout~76  ; |behavioural_logic|full_adder:inst65|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst66|Cout~76  ; |behavioural_logic|full_adder:inst66|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst67|Cout~76  ; |behavioural_logic|full_adder:inst67|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst68|Cout~76  ; |behavioural_logic|full_adder:inst68|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst69|Cout~76  ; |behavioural_logic|full_adder:inst69|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst70|Cout~76  ; |behavioural_logic|full_adder:inst70|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst71|Cout~76  ; |behavioural_logic|full_adder:inst71|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst72|Cout~76  ; |behavioural_logic|full_adder:inst72|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst73|Cout~76  ; |behavioural_logic|full_adder:inst73|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst74|Cout~76  ; |behavioural_logic|full_adder:inst74|Cout~76  ; combout          ;
+; |behavioural_logic|full_adder:inst75|Cout~72  ; |behavioural_logic|full_adder:inst75|Cout~72  ; combout          ;
+; |behavioural_logic|full_adder:inst75|S        ; |behavioural_logic|full_adder:inst75|S        ; combout          ;
+; |behavioural_logic|full_adder:inst74|S        ; |behavioural_logic|full_adder:inst74|S        ; combout          ;
+; |behavioural_logic|full_adder:inst73|S        ; |behavioural_logic|full_adder:inst73|S        ; combout          ;
+; |behavioural_logic|full_adder:inst72|S        ; |behavioural_logic|full_adder:inst72|S        ; combout          ;
+; |behavioural_logic|full_adder:inst71|S        ; |behavioural_logic|full_adder:inst71|S        ; combout          ;
+; |behavioural_logic|full_adder:inst70|S        ; |behavioural_logic|full_adder:inst70|S        ; combout          ;
+; |behavioural_logic|full_adder:inst69|S        ; |behavioural_logic|full_adder:inst69|S        ; combout          ;
+; |behavioural_logic|full_adder:inst68|S        ; |behavioural_logic|full_adder:inst68|S        ; combout          ;
+; |behavioural_logic|full_adder:inst67|S        ; |behavioural_logic|full_adder:inst67|S        ; combout          ;
+; |behavioural_logic|full_adder:inst66|S        ; |behavioural_logic|full_adder:inst66|S        ; combout          ;
+; |behavioural_logic|full_adder:inst65|S        ; |behavioural_logic|full_adder:inst65|S        ; combout          ;
+; |behavioural_logic|full_adder:inst64|S        ; |behavioural_logic|full_adder:inst64|S        ; combout          ;
+; |behavioural_logic|full_adder:inst63|S        ; |behavioural_logic|full_adder:inst63|S        ; combout          ;
+; |behavioural_logic|full_adder:inst62|S        ; |behavioural_logic|full_adder:inst62|S        ; combout          ;
+; |behavioural_logic|full_adder:inst61|S        ; |behavioural_logic|full_adder:inst61|S        ; combout          ;
+; |behavioural_logic|full_adder:inst|S~15       ; |behavioural_logic|full_adder:inst|S~15       ; combout          ;
+; |behavioural_logic|S[16]                      ; |behavioural_logic|S[16]                      ; padio            ;
+; |behavioural_logic|S[15]                      ; |behavioural_logic|S[15]                      ; padio            ;
+; |behavioural_logic|S[14]                      ; |behavioural_logic|S[14]                      ; padio            ;
+; |behavioural_logic|S[13]                      ; |behavioural_logic|S[13]                      ; padio            ;
+; |behavioural_logic|S[12]                      ; |behavioural_logic|S[12]                      ; padio            ;
+; |behavioural_logic|S[11]                      ; |behavioural_logic|S[11]                      ; padio            ;
+; |behavioural_logic|S[10]                      ; |behavioural_logic|S[10]                      ; padio            ;
+; |behavioural_logic|S[9]                       ; |behavioural_logic|S[9]                       ; padio            ;
+; |behavioural_logic|S[8]                       ; |behavioural_logic|S[8]                       ; padio            ;
+; |behavioural_logic|S[7]                       ; |behavioural_logic|S[7]                       ; padio            ;
+; |behavioural_logic|S[6]                       ; |behavioural_logic|S[6]                       ; padio            ;
+; |behavioural_logic|S[5]                       ; |behavioural_logic|S[5]                       ; padio            ;
+; |behavioural_logic|S[4]                       ; |behavioural_logic|S[4]                       ; padio            ;
+; |behavioural_logic|S[3]                       ; |behavioural_logic|S[3]                       ; padio            ;
+; |behavioural_logic|S[2]                       ; |behavioural_logic|S[2]                       ; padio            ;
+; |behavioural_logic|S[1]                       ; |behavioural_logic|S[1]                       ; padio            ;
+; |behavioural_logic|S[0]                       ; |behavioural_logic|S[0]                       ; padio            ;
+; |behavioural_logic|B[15]                      ; |behavioural_logic|B[15]~corein               ; combout          ;
+; |behavioural_logic|A[15]                      ; |behavioural_logic|A[15]~corein               ; combout          ;
+; |behavioural_logic|B[14]                      ; |behavioural_logic|B[14]~corein               ; combout          ;
+; |behavioural_logic|A[14]                      ; |behavioural_logic|A[14]~corein               ; combout          ;
+; |behavioural_logic|B[13]                      ; |behavioural_logic|B[13]~corein               ; combout          ;
+; |behavioural_logic|A[13]                      ; |behavioural_logic|A[13]~corein               ; combout          ;
+; |behavioural_logic|B[12]                      ; |behavioural_logic|B[12]~corein               ; combout          ;
+; |behavioural_logic|A[12]                      ; |behavioural_logic|A[12]~corein               ; combout          ;
+; |behavioural_logic|B[11]                      ; |behavioural_logic|B[11]~corein               ; combout          ;
+; |behavioural_logic|A[11]                      ; |behavioural_logic|A[11]~corein               ; combout          ;
+; |behavioural_logic|B[10]                      ; |behavioural_logic|B[10]~corein               ; combout          ;
+; |behavioural_logic|A[10]                      ; |behavioural_logic|A[10]~corein               ; combout          ;
+; |behavioural_logic|B[9]                       ; |behavioural_logic|B[9]~corein                ; combout          ;
+; |behavioural_logic|A[9]                       ; |behavioural_logic|A[9]~corein                ; combout          ;
+; |behavioural_logic|B[8]                       ; |behavioural_logic|B[8]~corein                ; combout          ;
+; |behavioural_logic|A[8]                       ; |behavioural_logic|A[8]~corein                ; combout          ;
+; |behavioural_logic|B[7]                       ; |behavioural_logic|B[7]~corein                ; combout          ;
+; |behavioural_logic|A[7]                       ; |behavioural_logic|A[7]~corein                ; combout          ;
+; |behavioural_logic|B[6]                       ; |behavioural_logic|B[6]~corein                ; combout          ;
+; |behavioural_logic|A[6]                       ; |behavioural_logic|A[6]~corein                ; combout          ;
+; |behavioural_logic|B[5]                       ; |behavioural_logic|B[5]~corein                ; combout          ;
+; |behavioural_logic|A[5]                       ; |behavioural_logic|A[5]~corein                ; combout          ;
+; |behavioural_logic|B[4]                       ; |behavioural_logic|B[4]~corein                ; combout          ;
+; |behavioural_logic|A[4]                       ; |behavioural_logic|A[4]~corein                ; combout          ;
+; |behavioural_logic|B[3]                       ; |behavioural_logic|B[3]~corein                ; combout          ;
+; |behavioural_logic|A[3]                       ; |behavioural_logic|A[3]~corein                ; combout          ;
+; |behavioural_logic|B[2]                       ; |behavioural_logic|B[2]~corein                ; combout          ;
+; |behavioural_logic|A[2]                       ; |behavioural_logic|A[2]~corein                ; combout          ;
+; |behavioural_logic|B[1]                       ; |behavioural_logic|B[1]~corein                ; combout          ;
+; |behavioural_logic|A[1]                       ; |behavioural_logic|A[1]~corein                ; combout          ;
+; |behavioural_logic|Cin                        ; |behavioural_logic|Cin~corein                 ; combout          ;
+; |behavioural_logic|A[0]                       ; |behavioural_logic|A[0]~corein                ; combout          ;
+; |behavioural_logic|B[0]                       ; |behavioural_logic|B[0]~corein                ; combout          ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.0 Build 215 05/29/2008 SJ Full Version
+    Info: Processing started: Fri Apr 26 15:09:19 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off 16_bit_RCA -c behavioural_logic
+Info: Using vector source file "J:/L3 Electronics/VHDL/Submission Docs/RCA/16_bit_RCA.vwf"
+Info: Simulation end time 50.0 ns did not reach the end of the input vector, which ended at 1.0 us
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 3
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 190 megabytes
+    Info: Processing ended: Fri Apr 26 15:09:21 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
+
+

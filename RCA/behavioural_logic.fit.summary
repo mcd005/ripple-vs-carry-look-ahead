@@ -1,0 +1,12 @@
+Fitter Status : Successful - Fri Apr 26 14:51:14 2019
+Quartus II Version : 8.0 Build 215 05/29/2008 SJ Full Version
+Revision Name : behavioural_logic
+Top-level Entity Name : behavioural_logic
+Family : Cyclone
+Device : EP1C20F400C7
+Timing Models : Final
+Total logic elements : 32 / 20,060 ( < 1 % )
+Total pins : 50 / 301 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 0 / 294,912 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
